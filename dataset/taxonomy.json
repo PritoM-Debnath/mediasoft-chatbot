@@ -1,0 +1,362 @@
+[
+  {
+    "id": "cat-retail-pos",
+    "parent_id": null,
+    "name": "Retail POS",
+    "slug": "retail-pos",
+    "level": 0
+  },
+
+
+  {
+    "id": "cat-pharmacy-healthcare",
+    "parent_id": "cat-retail-pos",
+    "name": "Pharmacy & Healthcare",
+    "slug": "pharmacy-healthcare",
+    "level": 1
+  },
+  {
+    "id": "cat-pharmacy",
+    "parent_id": "cat-pharmacy-healthcare",
+    "name": "Pharmacy",
+    "slug": "pharmacy",
+    "level": 2
+  },
+  {
+    "id": "cat-chemist",
+    "parent_id": "cat-pharmacy-healthcare",
+    "name": "Chemist",
+    "slug": "chemist",
+    "level": 2
+  },
+  {
+    "id": "cat-ayurvedic",
+    "parent_id": "cat-pharmacy-healthcare",
+    "name": "Ayurvedic",
+    "slug": "ayurvedic",
+    "level": 2
+  },
+  {
+    "id": "cat-surgical",
+    "parent_id": "cat-pharmacy-healthcare",
+    "name": "Surgical",
+    "slug": "surgical",
+    "level": 2
+  },
+
+  {
+    "id": "cat-superstore-hypermarket",
+    "parent_id": "cat-retail-pos",
+    "name": "Superstore, Hypermarket & Departmental Store",
+    "slug": "superstore-hypermarket-departmental-store",
+    "level": 1
+  },
+  {
+    "id": "cat-superstore",
+    "parent_id": "cat-superstore-hypermarket",
+    "name": "Superstore",
+    "slug": "superstore",
+    "level": 2
+  },
+  {
+    "id": "cat-groceries",
+    "parent_id": "cat-superstore-hypermarket",
+    "name": "Groceries",
+    "slug": "groceries",
+    "level": 2
+  },
+  {
+    "id": "cat-convenience-store",
+    "parent_id": "cat-superstore-hypermarket",
+    "name": "Convenience Store",
+    "slug": "convenience-store",
+    "level": 2
+  },
+  {
+    "id": "cat-department-stores",
+    "parent_id": "cat-superstore-hypermarket",
+    "name": "Department Stores",
+    "slug": "department-stores",
+    "level": 2
+  },
+  {
+    "id": "cat-hypermarket",
+    "parent_id": "cat-superstore-hypermarket",
+    "name": "Hypermarket",
+    "slug": "hypermarket",
+    "level": 2
+  },
+  {
+    "id": "cat-fruits-vegetables",
+    "parent_id": "cat-superstore-hypermarket",
+    "name": "Fruits & Vegetables",
+    "slug": "fruits-vegetables",
+    "level": 2
+  },
+  {
+    "id": "cat-meat-butcher",
+    "parent_id": "cat-superstore-hypermarket",
+    "name": "Meat & Butcher Shop",
+    "slug": "meat-butcher-shop",
+    "level": 2
+  },
+
+  {
+    "id": "cat-apparel-store",
+    "parent_id": "cat-retail-pos",
+    "name": "Apparel Store",
+    "slug": "apparel-store",
+    "level": 1
+  },
+  {
+    "id": "cat-apparel-clothing",
+    "parent_id": "cat-apparel-store",
+    "name": "Apparel & Clothing",
+    "slug": "apparel-clothing",
+    "level": 2
+  },
+  {
+    "id": "cat-boutiques-handicrafts",
+    "parent_id": "cat-apparel-store",
+    "name": "Boutiques & Handicrafts",
+    "slug": "boutiques-handicrafts",
+    "level": 2
+  },
+  {
+    "id": "cat-readymade-garment",
+    "parent_id": "cat-apparel-store",
+    "name": "Readymade Garment",
+    "slug": "readymade-garment",
+    "level": 2
+  },
+  {
+    "id": "cat-tailoring-fabrics",
+    "parent_id": "cat-apparel-store",
+    "name": "Tailoring & Fabrics",
+    "slug": "tailoring-fabrics",
+    "level": 2
+  },
+  {
+    "id": "cat-fancy-costume",
+    "parent_id": "cat-apparel-store",
+    "name": "Fancy Costume",
+    "slug": "fancy-costume",
+    "level": 2
+  },
+
+
+
+  {
+    "id": "cat-lifestyle-fashion",
+    "parent_id": "cat-retail-pos",
+    "name": "Lifestyle & Fashion Store Software",
+    "slug": "lifestyle-fashion-store-software",
+    "level": 1
+  },
+  {
+    "id": "cat-home-decore",
+    "parent_id": "cat-lifestyle-fashion",
+    "name": "Home Decore",
+    "slug": "home-decore",
+    "level": 2
+  },
+  {
+    "id": "cat-luggage-bags",
+    "parent_id": "cat-lifestyle-fashion",
+    "name": "Luggage & Bags",
+    "slug": "luggage-bags",
+    "level": 2
+  },
+  {
+    "id": "cat-fashion-watches",
+    "parent_id": "cat-lifestyle-fashion",
+    "name": "Fashion Watches",
+    "slug": "fashion-watches",
+    "level": 2
+  },
+  {
+    "id": "cat-glass-crockeries",
+    "parent_id": "cat-lifestyle-fashion",
+    "name": "Glass-And-Crockeries",
+    "slug": "glass-and-crockeries",
+    "level": 2
+  },
+  {
+    "id": "cat-baby-kids-store",
+    "parent_id": "cat-lifestyle-fashion",
+    "name": "Baby Shops & Kids Store",
+    "slug": "baby-shops-kids-store",
+    "level": 2
+  },
+  {
+    "id": "cat-books-shop",
+    "parent_id": "cat-lifestyle-fashion",
+    "name": "Books-Shop",
+    "slug": "books-shop",
+    "level": 2
+  },
+  {
+    "id": "cat-cosmetics-perfumes",
+    "parent_id": "cat-lifestyle-fashion",
+    "name": "Cosmetics & Perfumes",
+    "slug": "cosmetics-perfumes",
+    "level": 2
+  },
+  {
+    "id": "cat-jewellery",
+    "parent_id": "cat-lifestyle-fashion",
+    "name": "Jewellery",
+    "slug": "jewellery",
+    "level": 2
+  },
+  {
+    "id": "cat-salon-spa",
+    "parent_id": "cat-lifestyle-fashion",
+    "name": "Salon & Spa",
+    "slug": "salon-spa",
+    "level": 2
+  },
+  {
+    "id": "cat-beauty-parlor",
+    "parent_id": "cat-lifestyle-fashion",
+    "name": "Beauty Parlor",
+    "slug": "beauty-parlor",
+    "level": 2
+  },
+
+  {
+    "id": "cat-footwear-shoes",
+    "parent_id": "cat-retail-pos",
+    "name": "Footwear & Shoes",
+    "slug": "footwear-shoes",
+    "level": 1
+  },
+  {
+    "id": "cat-footwear",
+    "parent_id": "cat-footwear-shoes",
+    "name": "Footwear",
+    "slug": "footwear",
+    "level": 2
+  },
+  
+  {
+    "id": "cat-electronics-electrical",
+    "parent_id": "cat-retail-pos",
+    "name": "Electronics & Electrical",
+    "slug": "electronics-electrical",
+    "level": 1
+  },
+  {
+    "id": "cat-electronics-shop-pos",
+    "parent_id": "cat-electronics-electrical",
+    "name": "Electronics & Electrical Shop POS",
+    "slug": "electronics-electrical-shop-pos",
+    "level": 2
+  },
+  {
+    "id": "cat-mobile-phone-accessories",
+    "parent_id": "cat-electronics-electrical",
+    "name": "Mobile Phone & Accessories Shop POS",
+    "slug": "mobile-phone-accessories-shop-pos",
+    "level": 2
+  },
+  {
+    "id": "cat-home-appliances-shop-pos",
+    "parent_id": "cat-electronics-electrical",
+    "name": "Home Appliances Shop POS",
+    "slug": "home-appliances-shop-pos",
+    "level": 2
+  },
+  {
+    "id": "cat-computer-hardware-shop-pos",
+    "parent_id": "cat-electronics-electrical",
+    "name": "Computer Hardware Shop POS",
+    "slug": "computer-hardware-shop-pos",
+    "level": 2
+  },
+  {
+    "id": "cat-camera-accessories-software",
+    "parent_id": "cat-electronics-electrical",
+    "name": "Camera & Accessories Software",
+    "slug": "camera-accessories-software",
+    "level": 2
+  },
+
+  {
+    "id": "cat-restaurant-pos",
+    "parent_id": null,
+    "name": "Restaurant POS",
+    "slug": "restaurant-pos",
+    "level": 0
+  },
+  {
+    "id": "cat-restaurant",
+    "parent_id": "cat-restaurant-pos",
+    "name": "Restaurant",
+    "slug": "restaurant",
+    "level": 1
+  },
+  {
+    "id": "cat-quick-service-restaurant",
+    "parent_id": "cat-restaurant-pos",
+    "name": "Quick Service Restaurant",
+    "slug": "quick-service-restaurant",
+    "level": 1
+  },
+  {
+    "id": "cat-fine-dine",
+    "parent_id": "cat-restaurant-pos",
+    "name": "Fine Dine Restaurant",
+    "slug": "fine-dine",
+    "level": 1
+  },
+  {
+    "id": "cat-food-court",
+    "parent_id": "cat-restaurant-pos",
+    "name": "Food Court",
+    "slug": "food-court",
+    "level": 1
+  },
+  {
+    "id": "cat-burger-sandwich",
+    "parent_id": "cat-restaurant-pos",
+    "name": "Burger & Sandwich Shop",
+    "slug": "burger-sandwich",
+    "level": 1
+  },
+  {
+    "id": "cat-bakery",
+    "parent_id": "cat-restaurant-pos",
+    "name": "Bakery & Confectioneries",
+    "slug": "bakery",
+    "level": 1
+  },
+  {
+    "id": "cat-franchise",
+    "parent_id": "cat-restaurant-pos",
+    "name": "Franchise Management",
+    "slug": "franchise",
+    "level": 1
+  },
+  {
+    "id": "cat-ecommerce",
+    "parent_id": null,
+    "name": "Ecommerce",
+    "slug": "ecommerce",
+    "level": 0
+  },
+  {
+    "id": "cat-ecommerce-dev",
+    "parent_id": "cat-ecommerce",
+    "name": "Ecommerce Development",
+    "slug": "ecommerce-development",
+    "level": 1
+  },
+  {
+    "id": "cat-ecommerce-om",
+    "parent_id": "cat-ecommerce",
+    "name": "Ecommerce Order Management",
+    "slug": "ecommerce-order-management",
+    "level": 1
+  }
+]
