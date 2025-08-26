@@ -3,10 +3,10 @@ from .query import run_query
 def run():
     #Test Questions: "What is the price of pharmacy POS ?", "What are the key features of the pharmacy POS?", 
     res = run_query(
-        question="what are the key features of groceries-pos ?",  
+        question="what are the key features of groceries pos ?",  
         top_k=4,
-        section_title="Features",
-        taxonomy_id="cat-groceries",
+        #section_title="Features",
+        #taxonomy_id="cat-groceries",
     )
     print("\n=== ANSWER ===\n")
     print(res["answer"])
@@ -17,7 +17,7 @@ def run():
         print(f"[{i}] {m['id']}  score={m['score']:.4f}")
         print(f"    product={md.get('product_id')}  taxonomy={md.get('taxonomy_id')}  section={md.get('section_title')}")
         print(f"    url={md.get('source_url')}; price_range={md.get('price_range')}")
-        print(f"    Content:{m['content'][:500]}...\n")
+        print(f"    Content:{m['content'][:200]}...\n")
 
 if __name__ == "__main__":
     run()

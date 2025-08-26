@@ -3,6 +3,7 @@ import os
 from typing import Dict, Any, List, Optional
 
 from .retriever import Retriever, build_filter  
+from .categorize import categorize_keywords
 
 def build_context_for_llm(contexts: List[Dict[str, Any]]) -> str:
     lines = []
@@ -29,7 +30,7 @@ def answer_with_groq(question: str, contexts: List[Dict[str, Any]]) -> str:
 
     system_prompt = (
         "You are a precise human like assistant for a company catalog.\n"
-        "- Answer ONLY using the provided context.\n"
+        "- Answer ONLY using the provided context. Do not hallucinate\n"
         "- Response should be in a human conversational tone.\n"
         "- If the answer is not present, say you don't know.\n"
         "- Cite chunk's url from the context in the next line like, 'For more info, go to : {url}' \n"
@@ -37,6 +38,7 @@ def answer_with_groq(question: str, contexts: List[Dict[str, Any]]) -> str:
         "- If there are multiple questions, provide separate complete answers in different paragraphs."
     )
     ctx = build_context_for_llm(contexts)
+    print(ctx)
     user_msg = f"Question: {question}\n\nContext:\n{ctx}\n\nAnswer:"
 
     resp = client.chat.completions.create(
@@ -50,18 +52,19 @@ def answer_with_groq(question: str, contexts: List[Dict[str, Any]]) -> str:
     )
     return resp.choices[0].message.content.strip()
 
-def categorize():
-    pass
+    # taxonomy_id: Optional[str] = None,
+    # product_id: Optional[str] = None,
+    # section_title: Optional[str] = None,
 def run_query(
     question: str,
     top_k: int = 4,
-    taxonomy_id: Optional[str] = None,
-    product_id: Optional[str] = None,
-    section_title: Optional[str] = None,
 ) -> Dict[str, Any]:
-    # taxonomy_id, section_title = categorize(question)
+    
+    taxonomy_id, section_title = categorize_keywords(question)
     retriever = Retriever(top_k=top_k)
-    flt = build_filter(taxonomy_id, product_id, section_title)
+    flt = build_filter(taxonomy_id, section_title)
     hits = retriever.search(question, top_k=top_k, filters=flt)
     answer = answer_with_groq(question, hits)
     return {"matches": hits, "answer": answer}
+
+ 
